@@ -1,0 +1,225 @@
+<?php include("header.php") ?>
+<body>
+  <main class="sub4">
+    <h3>
+      미래를 생각하는 SMART SOLUTION기업,<br>
+      <span class="skyblue">(주)로엔코리아</span>에 문의하세요.
+    </h3>
+    <section class="sub4_form">
+          <div class="container">
+          <p class="sub_p2 form_p aos-init aos-animate" data-aos="fade-up">
+              입력 상자의 (*) 표시는 필수입니다
+          </p>
+  
+          <!--이메일 폼-->
+          <div class="form_inner">
+              <form enctype="multipart/form-data" id="form1" name="form1" method="post" action="form_send.php">
+  
+                  <input type="hidden" name="mode" value="send">
+  
+                  <div style="display:none;">
+                      <input type="text" name="to_name" size="15" value="k-tech">
+                  </div>
+  
+                  <!--이메일 수신자 설정-->
+                  <div id="mail_to">
+                      <p class="mail_to matil_to">Mail To.</p>
+                      <select class="mail_to_c" name="to">
+                          <option value="jh83500@naver.com">K-TECH</option>
+                      </select>
+                  </div>
+  
+                  <ul class="form_ul">
+                      <li data-aos="fade-up" class="no_bor aos-init aos-animate">
+                          <!--- 기업명 ---->
+                          <div id="form_com_name" class="f_title">
+                              기업명
+                          </div>
+                          <div id="form_com_name_1" class="f_cont">
+                              <p>
+                                  <input type="text" name="com_name" size="35" height="25" class="f_input">
+                              </p>
+                          </div>
+                          <div class="block"></div>
+                      </li>
+  
+                      <li data-aos="fade-up" class="no_bor aos-init aos-animate">
+                          <!--- 연락처 ---->
+                          <div id="form_name" class="f_title">
+                              <span class="color1">*</span>연락처
+                          </div>
+                          <div id="form_name_1" class="f_cont">
+                              <p>
+                                  <input name="num" type="text" height="25" class="f_input">
+                              </p>
+                          </div>
+                          <div class="block"></div>
+                      </li>
+                  </ul>
+  
+                  <ul class="form_ul">
+                      <li data-aos="fade-up" class="no_bor aos-init aos-animate">
+                          <!--- 이름 ---->
+                          <div id="form_name" class="f_title">
+                              <span class="color1">*</span>성명
+                              <span class="title_info">
+                                  이름을 입력하세요.
+                              </span>
+                          </div>
+                          <div id="form_name_1" class="f_cont">
+                              <p>
+                                  <input type="text" name="name" size="35" height="25" class="f_input">
+                              </p>
+                          </div>
+                          <div class="block"></div>
+                      </li>
+  
+                      <li data-aos="fade-up" class="no_bor aos-init aos-animate">
+                          <!--- 이메일주소 ---->
+                          <div id="form_name" class="f_title">
+                              <span class="color1">*</span>이메일
+                          </div>
+                          <div id="form_name_1" class="f_cont">
+                              <p>
+                                  <input type="text" name="email" size="35" height="25" class="f_input">
+                              </p>
+                          </div>
+                          <div class="block"></div>
+                      </li>
+                  </ul>
+  
+                  <div class="form_line"></div>
+  
+                  <!--- 종류 ---->
+                  <div class="form_tabs aos-init aos-animate" data-aos="fade-up">
+                      <div id="form_cate" class="f_title ver1">
+                          <span class="color1">*</span>문의 종류
+                      </div>
+                      <div id="form_tabs">
+                          <input class="tab_item" type="radio" name="catetype1" value="제품문의" id="option1">
+                          <label class="tab_item txt" for="option1">제품 문의</label>
+  
+                          <input class="tab_item" type="radio" name="catetype1" value="협업문의" id="option2">
+                          <label class="tab_item txt" for="option2">협업문의</label>
+  
+                          <input class="tab_item" type="radio" name="catetype1" value="협력사문의" id="option3">
+                          <label class="tab_item txt" for="option3">제휴문의</label>
+  
+                          <input class="tab_item" type="radio" name="catetype1" value="기타문의" id="option4">
+                          <label class="tab_item txt" for="option4">기타 문의</label>
+                      </div>
+                  </div>
+                  <div class="block"></div>
+  
+                  <!--- 제목 ---->
+                  <div  class="aos-init aos-animate">
+                      <div id="form_subject" class="f_title">
+                          <!--<span class="color1">*</span>-->제목
+                      </div>
+                      <div id="form_subject_1" class="f_cont">
+                          <p>
+                              <input type="text" name="subject" size="35" height="25" class="f_input">
+                          </p>
+                      </div>
+                      <div class="block"></div>
+                  </div>
+  
+                  <!--- 문의내용 ---->
+                  <div class="aos-init">
+                      <div id="form_content" class="f_title">
+                          <!--<span class="color1">*</span>-->문의 내용
+                      </div>
+                      <div id="form_content_1" class="f_cont2">
+                          <p>
+                              <textarea name="content" class="f_input2"></textarea>
+                          </p>
+                      </div>
+                      <div class="block"></div>
+                  </div>
+  
+                  <!--- 첨부파일  ---->
+                  <div class="form_file aos-init">
+                      <div id="form_attached" class="f_title width2">
+                          <div>
+                              <p class="file_p">첨부파일</p>
+                              <div class="file_info">
+                                  <p>
+                                      ㆍ등록 가능한 확장자 .doc .xls .ppt .hwp .txt .zip .pdf .alz .jpg .gif .bmp .psd .ai .mp3
+                                      파일
+                                  </p>
+                                  <p>
+                                      ·첨부할 수 있는 파일 용량은 20MB입니다.
+                                  </p>
+                              </div>
+                          </div>
+  
+                          <div>
+                              <div class="file-name">
+                                  <div class="upload-name ver2"></div>
+                                  <div class="file_del"><i class="xi-close"></i></div>
+                              </div>
+  
+                              <div class="filebox">
+                                  <input type="file" name="userfile1" id="ex_file" class="upload-hidden"
+                                      style="width:200px; height:50px">
+                                  <label for="ex_file">upload</label>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="block"></div>
+                  </div>
+  
+                  <!-- 개인정보 수집 및 이용안내 -->
+                  <div class="aos-init">
+                      <div class="inq_div">
+                          <div id="form_check" class="f_title">
+                              개인정보 수집 및 이용안내
+                          </div>
+                          <div class="inq_contbox">
+                              <p>
+                                  "로엔코리아"는 (이하 '회사'는) 회원님의 개인정보를 중요시하며, "정보통신망 이용촉진 및 정보보호"에 관한 법률을 준수하고 있습니다.
+                                  <br><br>
+                                  회사는 개인정보취급방침을 통하여 회원님께서 제공하시는 개인정보가 어떠한 용도와 방식으로 이용되고 있으며, 개인정보보호를 위해 어떠한 조치가 취해지고
+                                  있는지
+                                  알려드립니다.
+                                  <br><br>
+                                  회사는 개인정보취급방침을 개정하는 경우 웹사이트 공지사항(또는 개별공지)을 통하여 공지할 것입니다.
+                                  <br><br>
+                                  1. 개인정보 수집목적
+                                  회사는 많은 개인정보를 요구 및 수집하지 않으며, 원활한 서비스 제공을 위해서만 필요한 최소한의 개인정보를 수집하고 있습니다.
+                                  <br><br>
+                                  2. 개인정보 수집항목
+                                  작성시 필수입력사항으로 정하고 있는 최소한의 개인정보는 성명(실명), 주소, 전화번호, E-mail 등이 있으며 회원 여러분들에게 원활하고 적합한
+                                  서비스를 제공하고자
+                                  하기
+                                  위함입니다.
+                                  <br><br>
+                                  3. 개인정보의 보유 및 이용기간
+                                  서비스를 받는 동안 회사에서는 회원의 개인정보를 보유하며, 수집된 개인정보는 보다 나은 서비스 제공을 위하여 이용되어 집니다.
+                                  <br><br>
+                                  이용기간은 회원이 자신의 정보를 삭제 및 탈퇴를 요청하였을 경우 회사에서는 즉시 필요한 조치를 취합니다.
+                                  이 때 서버에서 기술적인 방법으로 파기되며 어떠한 용도로 열람 및 사용할 수 없도록 되어집니다.
+                              </p>
+                          </div>
+                      </div>
+                  </div>
+  
+                  <!-- 버튼 -->
+  
+                  <div class="aos-init">
+                      <div id="form_send">
+                          <div id="form_send_1">
+                              <input type="button" value="send" class="submit" onclick="form_Check();">
+                              <input type="reset" value="reset" class="reset">
+                          </div>
+                      </div>
+                  </div>
+              </form>
+          </div>
+      </div>
+    </section>
+  </main>
+  <?php include("footer.php") ?>
+  
+</body>
+</html>
